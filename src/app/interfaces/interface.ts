@@ -6,16 +6,16 @@ export interface Noticias {
   
   export interface Article {
     source: Source;
-    author: null | string;
+    author: string | null;
     title: string;
-    description: null | string;
+    description: string | null;
     url: string;
-    urlToImage: null | string;
+    urlToImage: string | null;
     publishedAt: string;
-    content: null | string;
+    content: string | null;
   }
   
  export interface Source {
-    id: null | string;
+    id: string | null;
     name: string;
   }
